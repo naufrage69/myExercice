@@ -1,7 +1,8 @@
 body{margin:0px; padding:0px; font-family:Arial,Geneva; font-size:11px;}
 
 #conteneur {
-	width:100%;
+	width:490px;
+	margin:0 auto;
 }
 
 #conteneur > div{
@@ -121,5 +122,14 @@ body{margin:0px; padding:0px; font-family:Arial,Geneva; font-size:11px;}
 									#floatbox > div > div > div[id="voir"] > a:visited{ text-decoration:none; 	color:#0099FF; }									
 									#floatbox > div > div > div[id="voir"] > a:hover{ text-decoration:underline; color:#FF0000; }
 									#floatbox > div > div > div[id="voir"] > a:active{ text-decoration:underline; color:#FF0000; }
-
-		
+	
+	#up {
+			width: 100%;
+			padding: 5px 0px;
+			
+			background-color: #333;
+		}
+				#up > a:link{ text-decoration: none; color:#FFF; } 	
+				#up > a:visited{ text-decoration: none; color:#FFF; } 			
+				#up > a:hover{ text-decoration: overline underline; color:#00FFFF; }
+				#up > a:active{ text-decoration: overline underline; color:#00FFFF; }
