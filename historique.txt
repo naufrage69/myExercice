@@ -1,0 +1,176 @@
+User@Ordi MINGW64 ~
+$ cd Desktop/myGIT/myRepository/exercices/myExercice
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ ls
+README.txt
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ cat README.txt
+
+-------------------------------------------------------------------------------------------
+
+CONSIGNES DE L'EXERCICE :
+
+-------------------------------------------------------------------------------------------
+
+Vous devez créer un repository Git simple contenant :
+
+Un fichier nommé "README.txt" qui présente le projet;
+Au moins 2 autres fichiers de votre choix (ils peuvent contenir des scripts de code, du texte sur un projet personnel...);
+Au moins 4 commits distincts montrant l’ajout puis la modification de certains fichiers.
+        Prêtez attention à la qualité de vos messages de commit et essayez d’être précis.
+        Par exemple, évitez des commentaires comme “commit 1”, “commit 2” etc. qui n'expliquent pas les modifications que vous avez effectuées.
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+PRESENTATION DU PROJET :
+
+-------------------------------------------------------------------------------------------
+
+Mettre en place la maquette finale d'une liste de produits avec présentation en liste.
+La liste présentera les meilleures ventes musicales de CD selon une source dont je tairai le nom.
+
+1 - Je place la maquette de base (articles.html) sans les données.
+2 - Je modifie la maquette (articles.html) ; hydratée avec les données (sans mise en forme).
+3 - Je modifie la maquette (articles.html) -> [accueil du css] et j'ajoute le fichier (articles.css) pour mettre en forme les données.
+4 - Je modifie la maquette (articles.html) -> [accueil du javascript et d'un bouton pour remonter en haut de page]
+    et j'ajoute le fichier (script.js) pour ajouter un ascenseur (lent) qui remonte qd on est en bas de page.
+
+
+-------------------------------------------------------------------------------------------
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git commit -m "Ajout du fichier README.txt contenant les consignes et le projet de l'exercice de OC sur Git/GitHub."
+[master (root-commit) 706c391] Ajout du fichier README.txt contenant les consignes et le projet de l'exercice de OC sur Git/GitHub.
+ 1 file changed, 36 insertions(+)
+ create mode 100644 README.txt
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git add articles.html
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git commit -m "Placement de la maquette de base (articles.html) sans les données"
+[master ad58e47] Placement de la maquette de base (articles.html) sans les données
+ 1 file changed, 107 insertions(+)
+ create mode 100644 articles.html
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git remote add origin https://github.com/naufrage69/myExercice.git
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.69 KiB | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/naufrage69/myExercice.git
+ * [new branch]      master -> master
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git commit -am "^C
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git commit -am "Modification de la maquette (articles.html) -> hydratée avec les données et les liens d'images."
+[master 22e0aa8] Modification de la maquette (articles.html) -> hydratée avec les données et les liens d'images.
+ 1 file changed, 110 insertions(+), 107 deletions(-)
+ rewrite articles.html (81%)
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.18 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/naufrage69/myExercice.git
+   ad58e47..22e0aa8  master -> master
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git add articles.css
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git commit -am "Modification de la maquette (articles.html) -> [accueil du css] et ajout du fichier (articles.css) pour mettre en forme les données."
+[master fafdd18] Modification de la maquette (articles.html) -> [accueil du css] et ajout du fichier (articles.css) pour mettre en forme les données.
+ 2 files changed, 127 insertions(+), 1 deletion(-)
+ create mode 100644 articles.css
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.22 KiB | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/naufrage69/myExercice.git
+   22e0aa8..fafdd18  master -> master
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git add script.js
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git commit -am "Modification de la maquette (articles.html) -> [accueil du javascript et bouton ascenseur]. Modification du css (articles.css) -> [bouton asc. javascript]. Ajout du fichier javascript (script.js) -> [ascenseur (lent) pour remonter qd on est en bas de page]."
+[master 8fd4036] Modification de la maquette (articles.html) -> [accueil du javascript et bouton ascenseur]. Modification du css (articles.css) -> [bouton asc. javascript]. Ajout du fichier javascript (script.js) -> [ascenseur (lent) pour remonter qd on est en bas de page].
+ 3 files changed, 29 insertions(+), 3 deletions(-)
+ create mode 100644 script.js
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 994 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/naufrage69/myExercice.git
+   fafdd18..8fd4036  master -> master
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
+$ git log
+commit 8fd40368d3231ef24630a3995c06b852ca6e2c1f
+Author: naufrage <erik@asler.com>
+Date:   Tue Sep 13 10:21:58 2016 +0200
+
+    Modification de la maquette (articles.html) -> [accueil du javascript et bouton ascenseur]. Modification du css (articles.css) -> [bouton asc. javascript]. Ajout du fichier javascript (script.js) -> [ascenseur (lent) pour remonter qd on est en bas de page].
+
+commit fafdd18bbcb8e4adc0e96ce73d1bdc41ca1075e9
+Author: naufrage <erik@asler.com>
+Date:   Tue Sep 13 10:13:18 2016 +0200
+
+    Modification de la maquette (articles.html) -> [accueil du css] et ajout du fichier (articles.css) pour mettre en forme les données.
+
+commit 22e0aa89444d43bc95448f168876c9945fddb409
+Author: naufrage <erik@asler.com>
+Date:   Tue Sep 13 10:07:06 2016 +0200
+
+    Modification de la maquette (articles.html) -> hydratée avec les données et les liens d'images.
+
+commit ad58e4725bd32508746795a18d25652cdde3940c
+Author: naufrage <erik@asler.com>
+Date:   Tue Sep 13 09:58:53 2016 +0200
+
+    Placement de la maquette de base (articles.html) sans les données
+
+commit 706c39103cf7d5d5ed7a43ef35c9a95c8eaf66f9
+Author: naufrage <erik@asler.com>
+Date:   Tue Sep 13 09:53:06 2016 +0200
+
+    Ajout du fichier README.txt contenant les consignes et le projet de l'exercice de OC sur Git/GitHub.
+
+User@Ordi MINGW64 ~/Desktop/myGIT/myRepository/exercices/myExercice (master)
