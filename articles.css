@@ -1,0 +1,125 @@
+body{margin:0px; padding:0px; font-family:Arial,Geneva; font-size:11px;}
+
+#conteneur {
+	width:100%;
+}
+
+#conteneur > div{
+	margin:0 auto;
+	float:left;
+	height:auto;	
+	text-align:center;
+}
+
+		#centre{
+			width:100%;
+			padding:7px 0px;
+			font-size:18px;
+			font-weight:bold;
+			color:#FFF;
+			background-color:#333;
+		}
+
+
+
+		#floatbox{
+			padding:10px 0px;
+			margin:0 auto;
+			clear:both;
+		}
+				
+				#floatbox > div{
+					float: left;
+					width:480px;
+					height: 130px;
+					margin: 5px;
+					border: 1px solid #CCC;
+					background-color:#EEE;
+					text-align:left;
+				}
+				
+						#floatbox > div > img{
+							float: left;
+							height:120px;
+							width:120px;
+							margin: 4px 5px 5px 4px;
+							border: 1px solid #000;
+							text-align:center;
+							
+						}
+						
+						#floatbox > div > div{
+							float: left;
+							padding:5px 0px;
+							border: 0px solid #0000FF;
+							height:118px;
+							width:340px;
+						}
+						
+							#floatbox > div > div > div[id="ref"]{
+								float: left;
+								text-indent:3px;
+								font-size:13px;
+								font-weight:bold;
+								color:#333;
+								border: 0px solid #0000FF;
+							}
+								
+								#floatbox > div > div > div[id="ref"] > a:link{text-decoration:none; color:#333;}
+								#floatbox > div > div > div[id="ref"] > a:visited{text-decoration:none; color:#333;}
+								#floatbox > div > div > div[id="ref"] > a:hover{text-decoration:underline; color:#333;}
+								#floatbox > div > div > div[id="ref"] > a:active{text-decoration:underline; color:#333;}
+
+								#floatbox > div > div > div[id="auteur"]:before{content: '[ ';}
+
+							#floatbox > div > div > div[id="auteur"]{
+								float: left;
+								text-indent:20px;
+								font-size:12px;
+								font-weight:bold;
+								color:#555;
+								border: 0px solid #0000FF;
+							}
+
+								#floatbox > div > div > div[id="auteur"] > a:link{text-decoration:none; color:#555;}
+								#floatbox > div > div > div[id="auteur"] > a:visited{text-decoration:none; color:#555;}
+								#floatbox > div > div > div[id="auteur"] > a:hover{text-decoration:underline; color:#555;}
+								#floatbox > div > div > div[id="auteur"] > a:active{text-decoration:underline; color:#555;}
+
+								#floatbox > div > div > div[id="auteur"]:after{content: ' ]';}
+							
+							#floatbox > div > div > div[id="prix"]{
+								float: right;
+								text-indent:3px;
+								font-size:13px;
+								font-weight:bold;
+								color:#F00FFF;
+								border: 0px solid #0000FF;
+							}
+							
+							#floatbox > div > div > div[id="des"]{
+								clear:both;
+								padding-top:10px;
+								text-indent:10px;
+								color:#666;
+								border: 0px solid #0000FF;
+								height:72px;
+								overflow:hidden;
+								-o-text-overflow: ellipsis; /* pour Opera 9 */
+								text-overflow: ellipsis; /* pour le reste du monde */
+							}
+							
+							#floatbox > div > div > div[id="voir"]{
+								float: right;
+								padding-top:10px;
+								font-weight:bold;
+								text-indent:10px;
+								border: 0px solid #0000FF;
+							}
+								
+									#floatbox > div > div > div[id="voir"] > a:link{ text-decoration:none; color:#0099FF; }
+									#floatbox > div > div > div[id="voir"] > a:visited{ text-decoration:none; 	color:#0099FF; }									
+									#floatbox > div > div > div[id="voir"] > a:hover{ text-decoration:underline; color:#FF0000; }
+									#floatbox > div > div > div[id="voir"] > a:active{ text-decoration:underline; color:#FF0000; }
+
+		
